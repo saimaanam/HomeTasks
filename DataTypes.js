@@ -10,7 +10,7 @@ var multNumberBoolean = 10 * false;
 
 //3. Division of various types
 var divStringBoolean = "not a number " / true;
-var divStringNumber = "not a number " / 100;
+var divStringNumber = "not a number " / 1000;
 var divNumberBoolean = 10 / false;
 
 //4. Explicit conversion
