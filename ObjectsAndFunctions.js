@@ -36,6 +36,13 @@ console.log('type of str is-  ',str);
 console.log('type of num is-  ',num);
 console.log('type of boo is-  ',boo);
 
+//Write a function that determines whether a number is prime or not
+function testPrime(num) {
+for(var i = 2; i < num; i++)
+if(num % i === 0) return console.log("Given number is not a prime number");
+return console.log('Given number is a prime number');
+};
+testPrime(49);
 
 
 
