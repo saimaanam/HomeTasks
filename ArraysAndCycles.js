@@ -29,10 +29,11 @@ const filteredArray = givenArray.filter(currentNumber => currentNumber > 3);
 console.log(filteredArray);
 
 //7.Write a function that takes two parameters - an array and a number and outputs the index of an array element equal to a number
-function index (array, num) {
-console.log(array.[num]);  
+function findIndex (array, num) {
+let index = array.indexOf(num);
+  console.log(index);
 }
-index([10,20,30,40],2);
+findIndex([10,20,30,40,50],30);
 
 //8.Implement a loop that will print the number 'a' until it is less than 10
 let i = 1;
