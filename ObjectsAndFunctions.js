@@ -37,12 +37,27 @@ console.log('type of num is-  ',num);
 console.log('type of boo is-  ',boo);
 
 //Write a function that determines whether a number is prime or not
-function testPrime(num) {
-for(var i = 2; i < num; i++)
-if(num % i === 0) return console.log("Given number is not a prime number");
-return console.log('Given number is a prime number');
-};
-testPrime(49);
+function prime(number)
+{
+  let isPrime = true;
+  if (number <= 1 ) return console.log("Give a number greater than 1");
+ 
+  else if (number > 1) {
+    for (let i = 2; i < number; i++) {
+        if (number % i == 0) {
+            isPrime = false;
+        }
+    }
+  }
+
+ if (isPrime) {
+  console.log(number,'is a prime number');
+    } else {
+  console.log(number,'is a not prime number');
+    }
+  };
+
+prime(9);
 
 
 
