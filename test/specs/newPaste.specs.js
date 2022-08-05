@@ -1,6 +1,6 @@
 const assert = require('assert');
 const newPaste = require('../pages/newPaste');
-//const savedPaste = require('../pages/savedPaste');
+const savedPaste = require('../pages/savedPaste');
 
 
 describe('create a new paste with given details', ()=>{
@@ -19,11 +19,11 @@ describe('create a new paste with given details', ()=>{
       
     });
 
-    /*it('it should verify new paste is created,Syntax is suspended for bash and code matches the one entered in paragraph 2', async ()=>{
+    it('it should verify new paste is created,Syntax is suspended for bash and code matches the one entered in paragraph 2', async ()=>{
         
         await savedPaste.verifyPasteName();
         await savedPaste.verifySyntax();
         await savedPaste.verifyCode();
 
-    })*/
+    });
 });
