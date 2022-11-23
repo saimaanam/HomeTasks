@@ -142,10 +142,6 @@ class GoogleCalcPage extends Page {
     }
 
    
-
-
-
-
-}
+               };
 
 module.exports = new GoogleCalcPage();
