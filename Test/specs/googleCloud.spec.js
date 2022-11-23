@@ -46,7 +46,7 @@ describe ('googleCloudSearch',()=>{
         await getPrice();
         await calculatorPage.selectEmail();
         await emailpage.openBrowserForEmail();
-    await browser.pause(5000);
+        await browser.pause(5000);
         await emailpage.selectEmailAddressAndSaveInVar();
 
         await emailpage.switchBrowser();
@@ -57,4 +57,10 @@ describe ('googleCloudSearch',()=>{
         //await emailpage.clickToOpenEmail();
     }) 
 
+
+       
+        
+        
+
+    
 }) 
