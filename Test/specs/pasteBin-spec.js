@@ -27,3 +27,4 @@ describe('create a new paste with given details', ()=>{
         await expect(await savedPastePage.codeCheck).toHaveText('git config --global user.name "New Sheriff in Town"');
       });
 });
+//jenkins
