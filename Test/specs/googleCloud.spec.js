@@ -57,10 +57,4 @@ describe ('googleCloudSearch',()=>{
         //await emailpage.clickToOpenEmail();
     }) 
 
-
-       
-        
-        
-
-    
 }) 
