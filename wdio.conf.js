@@ -22,7 +22,7 @@ exports.config = {
     //
     specs: [
         //'./test/specs/googleCloud-spec.js'
-        './test/specs/**/pasteBin-spec.js'
+        './test/specs/**/pasteBin.spec.js'
         //'./tesing/spec/**/search.js'
     ],
     // Patterns to exclude.
@@ -139,6 +139,9 @@ exports.config = {
         ['junit', 
         {
         outputDir: './report',
+            outputFileFormat: function (options) {
+            return 'results.xml';
+          },
         },
     ],
 ],
