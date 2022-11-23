@@ -35,7 +35,7 @@ class GoogleCalcPage extends Page {
     get committedUsage(){return $('#select_value_label_89');}
     get selectCommittedUsage(){return $('#select_option_128');}
     get estimateBtn(){return $('[aria-label="Add to Estimate"]');}
-    get email(){return $('[title="Email Estimate"] '');}
+    get email(){return $('[title="Email Estimate"]');}
    
     
     
