@@ -38,23 +38,23 @@ describe ('googleCloudSearch',()=>{
         
     }) ;
 
-    it('it should estimate the price for the selected configuration', async()=>{
-        await calculatorPage.estimate();
-    }) ;
+//     it('it should estimate the price for the selected configuration', async()=>{
+//         await calculatorPage.estimate();
+//     }) ;
 
-    it('it should share the estimation on provided email address', async()=>{
-        await getPrice();
-        await calculatorPage.selectEmail();
-        await emailpage.openBrowserForEmail();
-        await browser.pause(5000);
-        await emailpage.selectEmailAddressAndSaveInVar();
+//     it('it should share the estimation on provided email address', async()=>{
+//         await getPrice();
+//         await calculatorPage.selectEmail();
+//         await emailpage.openBrowserForEmail();
+//         await browser.pause(5000);
+//         await emailpage.selectEmailAddressAndSaveInVar();
 
-        await emailpage.switchBrowser();
-        await calculatorPage.switchToLastFrame();
-        await emailpage.pasteEmailAddress();
-        await emailpage.clickOnSendEmailBtn();
-        await emailpage.switchBrowserToCheckInbox();
-        //await emailpage.clickToOpenEmail();
-    }); 
+//         await emailpage.switchBrowser();
+//         await calculatorPage.switchToLastFrame();
+//         await emailpage.pasteEmailAddress();
+//         await emailpage.clickOnSendEmailBtn();
+//         await emailpage.switchBrowserToCheckInbox();
+//         //await emailpage.clickToOpenEmail();
+//     }); 
 
 });
