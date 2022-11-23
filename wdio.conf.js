@@ -21,7 +21,9 @@ exports.config = {
     // will be called from there.
     //
     specs: [
-        './test/specs/**/newPaste.specs.js'
+        //'./test/specs/googleCloud-spec.js'
+        './test/specs/**/pasteBin-spec.js'
+        //'./tesing/spec/**/search.js'
     ],
     // Patterns to exclude.
     exclude: [
@@ -132,7 +134,14 @@ exports.config = {
     // Test reporter for stdout.
     // The only one supported by default is 'dot'
     // see also: https://webdriver.io/docs/dot-reporter
-    reporters: ['spec'],
+    reporters: ['spec',
+        
+        ['junit', 
+        {
+        outputDir: './report',
+        },
+    ],
+],
 
 
     
@@ -141,7 +150,8 @@ exports.config = {
     // See the full list at http://mochajs.org/
     mochaOpts: {
         ui: 'bdd',
-        timeout: 60000
+        timeout: 100000,
+        require: ['@babel/register']
     },
     //
     // =====
