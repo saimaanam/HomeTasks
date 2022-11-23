@@ -22,9 +22,17 @@ exports.config = {
     //
     specs: [
         //'./test/specs/googleCloud-spec.js'
-        './test/specs/**/pasteBin.spec.js'
+        //'./test/specs/**/pasteBin.spec.js'
         //'./tesing/spec/**/search.js'
+        './test/specs/**/*.spec.js'
     ],
+    
+    suites: {
+        smokeTestPasteBin: ['./test/specs/pasteBin.spec.js'],
+
+        smokeTestGoogleCloud:['./test/specs/googleCloud.spec.js'],
+    },
+    
     // Patterns to exclude.
     exclude: [
         // 'path/to/excluded/files'
