@@ -2,7 +2,7 @@
 
 const homepage = require('../pages/home-page');
 const searchpage = require('../pages/search-page');
-const calculatorPage = require("../pages/calculator.page");
+const calculatorPage = require("../pages/calculator-page");
 const emailpage = require('../pages/email-page');
 const { getPrice } = require('../pages/email-page');
 
