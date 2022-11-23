@@ -10,19 +10,19 @@ describe ('googleCloudSearch',()=>{
     it ('it should search Google Cloud Platform', async()=>{
         homepage.open();
         await browser.maximizeWindow();
-    })
+    });
 
     it('it should search Google Cloud Platform Pricing Calculator', async()=>{
         await homepage.googleCloudSearch();
-    }) 
+    }); 
     
     it('it should click on Google Cloud Platform Pricing Calculator link', async()=>{
         await searchpage.selectCloudLink();
-    }) 
+    }); 
     
     it('it should select frame for Compute Engine', async()=>{
         await calculatorPage.switchToLastFrame();
-    }) 
+    }); 
 
     it('it should select data for Compute Engine', async ()=>{
         await calculatorPage.passNumberOfInstance(4);
@@ -36,11 +36,11 @@ describe ('googleCloudSearch',()=>{
         await calculatorPage.dataCentreLocationSelection();
         await calculatorPage.committedUsageSelection();
         
-    }) 
+    }) ;
 
     it('it should estimate the price for the selected configuration', async()=>{
         await calculatorPage.estimate();
-    }) 
+    }) ;
 
     it('it should share the estimation on provided email address', async()=>{
         await getPrice();
@@ -55,12 +55,6 @@ describe ('googleCloudSearch',()=>{
         await emailpage.clickOnSendEmailBtn();
         await emailpage.switchBrowserToCheckInbox();
         //await emailpage.clickToOpenEmail();
-    }) 
+    }); 
 
-
-       
-        
-        
-
-    
-}) 
+});
